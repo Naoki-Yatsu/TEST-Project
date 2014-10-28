@@ -1,0 +1,17 @@
+{
+    "contents" : "\n#\n# 軸の変更\n#\npar(xaxt=\"n\")\nplot( dat[,c(\"DATE\")],dat[,c(\"PRICE\")],type=\"l\")\npar(xaxt=\"s\")\naxis.Date(1,at=seq(min(dat[,c(\"DATE\")]),max(dat[,c(\"DATE\")]),\"months\"),format=\"%m/%d\")\n\n\n\n\"%Y-%m-%d %H:%M:%S\"\n\nformat(Sys.time(), \"%Y-%m-%d %H:%M:%OS3\")\n",
+    "created" : 1410625792993.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "704714441",
+    "id" : "5ABF8D23",
+    "lastKnownWriteTime" : 1410626982,
+    "path" : "J:/git/algorithm-trading-system/algorithm-trading-system/R/kdb/test_tmp.R",
+    "project_path" : "test_tmp.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
