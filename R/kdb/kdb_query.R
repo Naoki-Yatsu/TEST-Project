@@ -7,11 +7,15 @@ Sys.setenv(TZ="GMT")
 options(digits.secs=3)
 
 # Open connection
-h5011 <- open_connection("192.168.0.55",5011,":")
-h5012 <- open_connection("192.168.0.55",5012,":")
-h5013 <- open_connection("192.168.0.55",5013,":")
-h     <- open_connection("192.168.0.55",5013,":")
+hostip <- "192.168.10.212"
 
+# Open
+h5011 <- open_connection(hostip,5011,":")
+h5012 <- open_connection(hostip,5012,":")
+h5013 <- open_connection(hostip,5013,":")
+h     <- open_connection(hostip,5015,":")
+
+# Close
 close_connection(h)
 
 # Query
